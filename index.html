@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myinspiration</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,30 +16,31 @@
     <h2>@typography</h2>
     <h1>Heading 1</h1>
     <p>here i will write my basic info</p>
+    <p>This para will have a <strong>Bold </strong>text</p>
     <small>hey i am studying in Chandigarh university to achieve my goals</small>
     <hr>
 
     <h2>@Container</h2>
     <h3>fluid container</h3>
-    <div>this is a fluid Container and it will go till the end of the page</div>
+    <div class="Fluid ">this is a fluid Container and it will go till the end of the page</div>
 
     <h3>Centre container</h3>
-    <div>this is a fluid container and it will go to specified width </div>
+    <div class="Container">this is a fluid container and it will go to specified width </div>
 
     <hr>
 
 
     <h2>@Links</h2>
-    <a href="https://google.com " target="_blank">Primary </a>
-
-    <a href="https://Youtube.com " target="_blank">Secondary link </a>
+    <a class = "  Primary-link " href="https://google.com " target="_blank">Primary </a>
+    
+    <a class="secondary" href="https://Youtube.com " target="_blank">Secondary link </a>
     <hr>
 
     <h2>@List</h2>
 
     <h3>Unordered List</h3>
 
-    <ul>
+    <ul class="bullets">
         <li>Item one</li>
         <li>Item Two</li>
         <li>Item Three</li>
@@ -46,15 +48,15 @@
 
     <h3>Unordered inline list</h3>
 
-    <ul>
-        <li>Inline item one</li>
-        <li>Inline item Two</li>
-        <li>Inline item Three</li>
+    <ul class="bullets">
+        <li class="list-item-inline">Inline item one</li>
+        <li class="list-item-inline">Inline item Two</li>
+        <li class="list-item-inline">Inline item Three</li>
     </ul>
 
     <h3>Reverse ordered List</h3>
 
-    <ol>
+    <ol reversed>
         <li>milk</li>
         <li>eggs</li>
         <li>bread</li>
@@ -63,29 +65,31 @@
 
     <h2>@nav bar</h2>
 
-    <nav>
-        <div>i am a developer</div>
+    <nav class="navigation">
+        <div class="developer">i am a developer</div>
 
-        <ul>
-            <li>
+       <div class="cont">
+        <ul class="bullets">
+            <li class="list-item-inline">
                 <a href="/">Home</a>
             </li>
-            <li>
+            <li class="list-item-inline">
                 <a href="/">Projects</a>
             </li>
-            <li>
+            <li class="list-item-inline">
                 <a href="/">About Me</a>
             </li>
         </ul>
+       </div>
     </nav>
 
     <hr>
 
     <h3>@header</h3>
 
-    <header>
-        <img src="images/header.svg">
-        <h1>Heading inside hero</h1>
+    <header class="hero">
+        <img class="hero-image" src="images/header.svg">
+        <h1 class="hero-heading">Yuvraj <span class="web">The Web Developer</span> </h1>
     </header>
 
     <hr>
