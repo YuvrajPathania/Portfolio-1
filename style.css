@@ -84,7 +84,7 @@ hr {
 
 .navigation {
 
-    background: linear-gradient(to right,darkblue , rgb(27, 26, 26));
+    background: linear-gradient(to right, darkblue, rgb(27, 26, 26));
 
     color: white;
     height: 100px;
@@ -129,37 +129,92 @@ hr {
 
 /* Headings */
 
-.hero{
-     
+.hero {
+
     padding: 2rem;
 }
 
-.hero .hero-image{
+.hero .hero-image {
     display: block;
-  max-width: 370px;
+    max-width: 370px;
     margin: auto;
 
 }
 
-.hero-heading{
-       
-       text-align: center;
+.hero-heading {
+
+    text-align: center;
     padding: 1rem 4rem;
 }
 
-.hero-heading::first-letter{
-     
+.hero-heading::first-letter {
+
     font-size: 40px;
     font-style: italic;
-   
+
 }
 
-.web{
-      
+.web {
+
     color: rgb(11, 11, 185);
 }
 
 
 /* Sections */
+
+.section{
+      
+    padding: 2rem;
+}
+
+.section h1 {
+
+    text-align: center;
+    
+
+}
+
+.ow{
+     
+    background-color:#9face6;
+}
+
+
+ .center{
+       
+    text-align: center;
+ }
+
+
+ /* Footer */
+
+ .footer{
+      
+    background: linear-gradient(to right,rgb(113, 157, 234) , rgb(43, 43, 43));
+
+    padding: 1rem;
+    text-align: center;
+ }
+
+ .social{
+      
+ 
+    text-align: center;
+    margin: 1rem;
+ }
+.social li{
+      
+    list-style: none;
+    display: inline;
+   
+    margin: 0rem 2rem;
+   
+}
+
+ .link{
+      
+    text-decoration: none;
+    color: black;
+}
 
 
