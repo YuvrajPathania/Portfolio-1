@@ -1,128 +1,191 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myinspiration</title>
-    <link rel="stylesheet" href="style.css">
+    <title>First portfolio</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,600&family=Chivo+Mono:ital,wght@0,500;1,500&family=Noto+Serif:ital@1&family=Playfair+Display:wght@600&family=Raleway:ital,wght@1,300&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Andika&family=Barlow:ital,wght@1,600&family=Chivo+Mono:ital,wght@0,500;1,500&family=Noto+Serif:ital@1&family=Playfair+Display:wght@600&family=Raleway:ital,wght@1,300&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rancho&family=Water+Brush&display=swap');
+
+        * {
+
+
+
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: poppins;
+            color: white;
+
+        }
+         
+        .hero{
+              
+            height: 100vh;
+            width: 100%;
+            background-image: url(/images/bg1.jpg);
+            background-size: cover;
+            background-position: center;
+
+           
+        }
+
+        nav{
+             
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+           
+            padding-top: 45px;
+            padding-left: 8%;
+            padding-right: 2%;
+        }
+        
+
+     .logo{
+           
+        font-size: 32px;
+        cursor: pointer;
+
+     }
+
+     .logo a{
+        text-decoration: none;
+     }
+
+     span{
+          
+        color: red;
+     }
+        
+     nav ul li{
+        display: inline-block;
+        list-style: none;
+        font-size: 20px;
+        margin: 2px 21px;
+     }
+
+     li a{
+          
+        text-decoration: none;
+
+     }
+
+     nav ul li a:hover{
+             
+        color: #f9004d;
+        transition: 0.5s;
+     }
+
+     nav ul li a:active{
+           
+        text-decoration: underline;
+     }
+
+     .home{
+          
+       font-weight: bold;
+       color: #f6204b;
+     }
+
+     .content{
+          
+        display: flex;
+        flex-direction: column;
+        margin: 9rem;
+     }
+     
+     h2{
+          color: #f9004d;
+     }
+
+     .content h1{
+      font-family: 'Andika', sans-serif;
+     }
+
+     .content{
+          
+        padding: 15px;
+     }
+
+     .content h3{
+
+     margin-top: 8px;
+     font-family: 'Andika';
+     letter-spacing: 2px;
+           
+     }
+     .content span{
+      font-family: 'Andika', sans-serif;
+        font-size: 21px;
+     }
+     
+     .btn{
+          font-size: 15px;
+        background-color: #f6204b;
+        border: 2px solid transparent;
+        border-radius: 30px;
+        padding: 5px 5px;
+        margin-top: 20px;
+        font-weight: bold;
+        font-family: 'Playfair Display', serif;
+        color: rgb(255, 255, 255);
+        transition:  .4s;
+        cursor: pointer; 
+     }
+
+     .btn:hover{
+        
+           transform: scale(1.1);
+     }
+
+
+   
+    
+    
+    </style>
 </head>
 
 <body>
-    <h1>Welcome to Portfolio </h1>
-    <p>I am going to create my own Portfolio website </p>
-    <hr>
 
-    <h2>@typography</h2>
-    <h1>Heading 1</h1>
-    <p>here i will write my basic info</p>
-    <p>This para will have a <strong>Bold </strong>text</p>
-    <small>hey i am studying in Chandigarh university to achieve my goals</small>
-    <hr>
-
-    <h2>@Container</h2>
-    <h3>fluid container</h3>
-    <div class="Fluid ">this is a fluid Container and it will go till the end of the page</div>
-
-    <h3>Centre container</h3>
-    <div class="Container">this is a fluid container and it will go to specified width </div>
-
-    <hr>
-
-
-    <h2>@Links</h2>
-    <a class="  Primary-link " href="https://google.com " target="_blank">Primary </a>
-
-    <a class="secondary" href="https://Youtube.com " target="_blank">Secondary link </a>
-    <hr>
-
-    <h2>@List</h2>
-
-    <h3>Unordered List</h3>
-
-    <ul class="bullets">
-        <li>Item one</li>
-        <li>Item Two</li>
-        <li>Item Three</li>
-    </ul>
-
-    <h3>Unordered inline list</h3>
-
-    <ul class="bullets">
-        <li class="list-item-inline">Inline item one</li>
-        <li class="list-item-inline">Inline item Two</li>
-        <li class="list-item-inline">Inline item Three</li>
-    </ul>
-
-    <h3>Reverse ordered List</h3>
-
-    <ol reversed>
-        <li>milk</li>
-        <li>eggs</li>
-        <li>bread</li>
-    </ol>
-    <hr>
-
-    <h2>@nav bar</h2>
-
-    <nav class="navigation">
-        <div class="developer">i am a developer</div>
-
-        <div class="cont">
-            <ul class="bullets">
-                <li class="list-item-inline">
-                    <a href="/">Home</a>
-                </li>
-                <li class="list-item-inline">
-                    <a href="/">Projects</a>
-                </li>
-                <li class="list-item-inline">
-                    <a href="/">About Me</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <hr>
-
-    <h3>@header</h3>
-
-    <header class="hero">
-        <img class="hero-image" src="images/header.svg">
-        <h1 class="hero-heading">Yuvraj <span class="web">The Web Developer</span> </h1>
-    </header>
-
-    <hr>
-
-    <h2>@section</h2>
-    <section class="section">
-        <div class="center">
-            <h1>white section</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis illo, sequi cumque cupiditate
-                voluptas nisi quisquam assumenda aliquid fugit sed dignissimos quo, nesciunt fugiat!</p>
-        </div>
-
-    </section>
-    <section class="section ow">
-        <div class="center">
-            <h1>off white section</h1>
-            <p>This will have grey Background</p>
-        </div>
-    </section>
-    <hr>
-    <h2>@Footer section</h2>
-    <footer class="footer">
-        <div class="footer-header">Some  small heading inside footer</div>
-        <ul class="social">
-            <li ><a class ="link"href="/">Instagram</a></li>
-            <li><a class ="link"href="/">Github</a></li>
-            <li>
-                <a class ="link"href="/">Twitter</a></li>
+   <div class="hero">
+   
+    <nav>
+        <h1 class="logo"><a href="index.html">My<span>insp</span></a></h1>
+        <ul>
+            <li><a href="#" class="home">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="Project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
             
         </ul>
-    </footer>
+    </nav>
+    <div class="content"> 
 
-    <!-- <div style="height: 30vh;"></div> -->
+        <h2>Hii </h2>
+        <h1>I'm  Yuvraj Pathania</h1>
+        <h3><span>Web Developer</span></h3>
+          <div>
+           <a href="contact.html"> <button class="btn"> Let's Talk</button></a>
+          </div>
+        </div>
+      
+   </div>
+
+ 
+    
+   
+
+
+
 </body>
 
 </html>
