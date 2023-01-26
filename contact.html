@@ -191,7 +191,7 @@
         .sub {
             margin-top: 18px;
             border-radius: 20px;
-            width: 910px;
+            width: 913px;
             padding-left: 1%;
             font-size: 16px;
             color: Black;
@@ -200,8 +200,7 @@
         .mess {
             margin-top: 18px;
             border-radius: 20px;
-
-            width: 882px;
+            width: 910px;
             padding-left: 1%;
             font-size: 16px;
             color: Black;
@@ -222,7 +221,7 @@
      }
 
      .btn:hover{
-        
+        background-color: #c9445f;
         transform: scale(1.1);
   }
     </style>
@@ -272,11 +271,12 @@
             <div class="Email">
                 <h2>SEND ME AN EMAIL</h2>
                 <div class="form">
-                    <form action="#">
+                    <form action="https://formspree.io/f/xpzeqzja"
+                    method="POST">
 
                         <label for="name">
                             <div class="inlin">
-                                <input type="text" placeholder="Name" class="name">
+                                <input type="text" placeholder="Name" class="name" name="name">
                             </div>
 
 
@@ -286,20 +286,20 @@
                         <label for="email">
 
 
-                            <input type="text" placeholder="Email" class="email">
+                            <input type="text" placeholder="Email" class="email" name="email">
 
                         </label>
 
                         <label for="subject">
                             <div>
-                                <input type="text" placeholder="Subject" class="sub">
+                                <input type="text" placeholder="Subject" class="sub" name="subject">
                             </div>
                         </label>
 
 
                         <label for="subject">
                             <div>
-                                <textarea name="mess" class="mess" cols="30" rows="5" placeholder="Message send krne ki kosish mt krna backend nhi dala hai abhi"></textarea>
+                                <textarea name="mess" class="mess" cols="40" rows="5" placeholder="Please Write your Message here"></textarea>
                             </div>
                         </label>
 
