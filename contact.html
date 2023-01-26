@@ -96,6 +96,11 @@
             font-size: 40px;
         }
 
+        .Contact{
+            color: #f9004d;
+            font-weight: bold;
+        }
+
         .content {
 
             display: flex;
@@ -238,7 +243,7 @@
                 <li><a href="about.html" class="ME">About Me</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="Project.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="Contact">Contact</a></li>
 
             </ul>
 
@@ -276,7 +281,7 @@
 
                         <label for="name">
                             <div class="inlin">
-                                <input type="text" placeholder="Name" class="name" name="name">
+                                <input type="text" placeholder="Name" class="name" name="name" required>
                             </div>
 
 
@@ -286,20 +291,20 @@
                         <label for="email">
 
 
-                            <input type="text" placeholder="Email" class="email" name="email">
+                            <input type="text" placeholder="Email" class="email" name="email" required>
 
                         </label>
 
                         <label for="subject">
                             <div>
-                                <input type="text" placeholder="Subject" class="sub" name="subject">
+                                <input type="text" placeholder="Subject" class="sub" name="subject" required>
                             </div>
                         </label>
 
 
                         <label for="subject">
                             <div>
-                                <textarea name="mess" class="mess" cols="40" rows="5" placeholder="Please Write your Message here"></textarea>
+                                <textarea name="mess" class="mess" cols="40" rows="5" placeholder="Please Write your Message here" required></textarea>
                             </div>
                         </label>
 
